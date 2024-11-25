@@ -1,0 +1,36 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>{{lang_trans('txt_sno')}}</th>
+      <th>{{lang_trans('txt_fullname')}}</th>
+      <th>{{lang_trans('txt_father_name')}}</th>
+      <th>{{lang_trans('txt_mobile_num')}}</th>
+      <th>{{lang_trans('txt_email')}}</th>
+      <th>{{lang_trans('txt_gender')}}</th>
+      <th>{{lang_trans('txt_address')}}</th>
+      <th>{{lang_trans('txt_nationality')}}</th>
+      <th>{{lang_trans('txt_country')}}</th>
+      <th>{{lang_trans('txt_state')}}</th>
+      <th>{{lang_trans('txt_city')}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    @if($datalist->count()>0)
+    @foreach($datalist as $k=>$val)
+      <tr>
+        <td>{{$k+1}}</td>
+        <td>{{$val->name}}</td>
+        <td>{{$val->father_name}}</td>
+        <td>{{$val->mobile}}</td>
+        <td>{{$val->email}}</td>
+        <td>{{$val->gender}}</td>
+        <td>{{$val->address}}</td>
+        <td>{{@config('constants.NATIONALITY_LIST')[$val->nationality]}}</td>
+        <td>{{$val->country}}</td>
+        <td>{{$val->state}}</td>
+        <td>{{$val->city}}</td>
+      </tr>
+    @endforeach
+    @endif
+  </tbody>
+</table>

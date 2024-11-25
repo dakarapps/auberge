@@ -1,0 +1,75 @@
+.hide_elem {
+    display: none;
+}
+.hide-elem {
+    display: none;
+}
+.nav-menus-wrapper{
+    transition-property: none;
+}
+.home-banner{
+  background-image: url('../uploads/banners/pgk2.jpg');
+  transition: background 1s linear;
+}
+.home-banner .caption h2{
+  font-size: 42px;
+}
+.subscribe-section{
+  background: #ff5722 url(../img/bg-new.png);
+}
+.counter-section{
+  background: #ff5722 url(../img/bg-new.png) !important;
+}
+.btn{
+    color: rgb(255, 255, 255);
+    padding: 10px 22px;
+    cursor: pointer;
+    transition: all 0s ease 0s;
+    border-radius: 0.3rem;
+}
+.color-c1{
+  color: #a8a8a8;
+}
+.color-black{
+  color: #2a2929;
+}
+.booked-room, .booked-room:hover{
+  color: #a8a8a8;
+  cursor: not-allowed;
+}
+.section-shadow{
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  -webkit-box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+}
+.input-with-no-icon  .form-control{
+  border: none;
+    border-radius: 5px;
+    height: 60px;
+    background: #f6f7f9;
+    overflow: hidden;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #717686;
+    border: 1px solid #ebedf1;
+}
+.error{
+  color: red;
+}
+.required-field{
+  color: red;
+  margin-left: 2px;
+}
+.card-elem{
+  box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
+  border-radius: 10px;
+  background: #ffffff;
+}
+.pagination li{
+  padding: 0px !important;
+}
+.a-text-primary{
+  color: #007bff !important;
+}
+.text-per-room{
+  font-size: 12px;
+}
